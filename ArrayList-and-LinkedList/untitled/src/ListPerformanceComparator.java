@@ -65,14 +65,12 @@ public class ListPerformanceComparator {
     private static void compareSequentialAccessTime(List<Integer> arrayList, List<Integer> linkedList) {
         long start = System.nanoTime();
         for (Integer ignored : arrayList) {
-            // Sequential access
         }
         long end = System.nanoTime();
         System.out.println("ArrayList sequential access time: " + (end - start) + " ns");
 
         start = System.nanoTime();
         for (Integer ignored : linkedList) {
-            // Sequential access
         }
         end = System.nanoTime();
         System.out.println("LinkedList sequential access time: " + (end - start) + " ns");
